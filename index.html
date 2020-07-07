@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML technical documentation page.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=VT323&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="Title">HTML and CSS</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction"> Introduction</a></li>
+      <li><a class="nav-link" href="#HTML_Structural_tags">HTML Structural tags</a></li>
+      <li><a class="nav-link" href="#HTML_Hyperlink">HTML Hyperlink</a></li>
+      <li><a class="nav-link" href="#HTML_List">HTML List</a></li>
+      <li><a class="nav-link" href="#HTML_Form">HTML Form</a></li>
+      <li><a class="nav-link" href="#HTML_Audio">HTML Audio</a></li>
+      <li><a class="nav-link" href="#HTML_Figure">HTML Figure</a></li>
+      <li><a class="nav-link" href="#CSS_Basics">CSS Basics</a></li>
+      <li><a class="nav-link" href="#CSS_Text">CSS Text</a></li>
+      <li><a class="nav-link" href="#CSS_Color_and_Size">CSS Color and Size</a></li>
+      <li><a class="nav-link" href="#CSS_Hierarchy">CSS Hierarchy</a></li>
+      <li><a class="nav-link" href="#CSS_Images">CSS Images</a></li>
+      <li><a class="nav-link" href="#CSS_Container">CSS Container</a></li>
+      <li><a class="nav-link" href="#CSS_media_query">CSS media query</a></li>
+      <li><a class="nav-link" href="#CSS_Pseudo-classes">CSS Pseudo-classes</a></li>
+      <li><a class="nav-link" href="#CSS_Animation">CSS Animation</a></li>
+      <li><a class="nav-link" href="#Accessibility">Accessibility</a></li>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>This is a Technical Documentation for HTML and CSS. This page covers enough of the basics of HTML and CSS to
+          get you started with making your own website. HTML is a markup language that is used to describe the general
+          information and layout of the page. Basically a text document to say what should be written on the webpage.
+          CSS stands for cascading style sheet. This is used to produce the layout and design of the page. This is all
+          you need to make a basic webpage.</p>
+
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Structural_tags">
+      <header>HTML Structural tags</header>
+      <article>
+        <p>
+          Structural tags are containers that hold sections of your webpage. These sections can be referred to in CSS to
+          style each section individually. Structural tags order your webpage and help with accessability as well. The
+          webpages you build should be accessible to all, including those who may be using screen readers and those who
+          have sight problems. <a href="#Accessibility">More information can be found on accessibility.</a>
+        </p>
+        <p>When writing html, you use tags(&lt;>) which have to be closed(&lt;/>). For example to write the title of the
+          page you would use: <br><code>&lt;title>Hello World!&lt;/title></code><br>However, some tags are self
+          inclosing meaning you do no have to close the tag using<code>&lt;/tag name></code> An example of this would be
+          something like the
+          <code>&lt;br></code> which creates a new line.<br> <strong>SC</strong> will refer to self closing tags.</p>
+        <p>
+          <code>&lt;!Doctype html></code> <strong>SC.</strong> HTML code must include this. It declares that this is a
+          HTML document. <br>
+          <code>&lt;html></code> The root element of a HTML page.<br>
+          <code>&lt;head></code> Contains meta information about the HTML page. This contains information you do not
+          want your user to see.<br>
+          <code>&lt;title></code> Title of the page. This can be either be in the head or body tag. This is what is
+          shown in the browser tab or title.<br>
+          <code>&lt;body></code> This contains all all the html code that will be used in the markup.<br>
+          <code>&lt;main></code> Main is the main information on the page. It does not include things like navigation
+          bars headers and footers.<br>
+          <code>&lt;h1></code> <strong>h</strong>eader <strong>1</strong> is the title for the first section of the
+          page. each section can be titled with h1.<br>
+          <code>&lt;h2></code> h2 is a subsection of the h1. you can have subsection of h2 with the h3 tags. this
+          carries on all the way to h6.<br>
+          <code>&lt;p></code> This is the <strong>p</strong>aragraph tag.<br>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Hyperlink">
+      <header>HTML Hyperlink</header>
+      <article>
+        <p>
+          <code>&lt;a></code> The anchor tag is used for hyperlinks. whatever is in between the open and close anchor
+          tags is hyperlinked.<br>
+          <code>href</code> The href attribute is where the url for hyperlink is put. Attributes are settings that go
+          inside the tags that add functionality. The href accepts not only urls, but special values that you use for
+          extra functionality. for example:<br>
+          <code>&lt;a href="www.duck.com">goes to duck.com&lt;/a></code><br>
+          <code>&lt;a href="#">dead link&lt;/a></code><br>
+          <code>&lt;a href="id">scrolls to location of id on this webpage.&lt;/a></code><br><br>
+          You can make the link open a new tab using <code>target="_blank</code>. <br>Example:<br>
+          <code>&lt;a href="www.duck.com" target="_blank">opens duck.com in new tab&lt;/a></code><br>
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="HTML_List">
+      <header>HTML List</header>
+      <article>
+        <p>
+          <code>&lt;ol></code> Create an ordered list. Numbered<br>
+          <code>&lt;ul></code> Create an unordered list. Bullet points<br>
+          <code>&lt;li></code> List item. These show up as bullet points.<br>
+          Example ordered list:<br>
+          <code>
+                &lt;ol><br>
+                    &lt;li>item 1&lt;/li><br>
+                    &lt;li>item 2&lt;/li><br>
+                    &lt;/ol><br>
+                </code>
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Form">
+      <header>HTML Form</header>
+      <article>
+        <p>
+          the <code>&lt;form></code> tag is container in which you put your input fields in. This can have the attribute
+          <code>action='url'</code>. When the form is completed the information in the form will be sent to the url.
+          This link should be a link to a form processor.
+        </p>
+        <p>
+          There are many types of inputs that you can put in a form. these are not attributes. they are tags. the go in
+          between the form open tag and form close tag.<br>
+          <code>&lt;input type="text" placeholder="faded text inside the input field"></code> <strong>SC.</strong> This
+          will create a text box to type in. The placeholder is the text that shows up as the default text inside the
+          input field.<br>
+          <code>&lt;button type ="submit">text on button&lt;button></code> This creates a button.<br><br>
+          <code>
+              &lt;label for="label(same as text)"> 
+                &lt;input id="id" type="radio" name="of all radio buttons" value="value">text 
+            &lt;/label> 
+            
+            </code><br>
+          Here two tags are shown at the same time. The label tag wraps around the input tag. The label tag labels the
+          input tag so screen readers can understand what the input is saying. This is also the text that shows up next
+          to the radio. On the input tag, we have the type radio. This gives a select option, similar to checkbox except
+          only one can be picked at a time. your would use this for something like picking a gender. The name attribute
+          is what links the radios together. The value attribute is what is sent to the form processor.<br><br>
+          <code>
+              &lt;input id="id" type="checkbox" name="personality" checked> 
+            </code> This is a check box input field. Again, name is what connects all the checkboxes. The checked
+          attribute is optional and checks inputs by default.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Audio">
+      <header>HTML Audio</header>
+      <article>
+        <p>
+          <code>&lt;audio  controls></code> Controls tag alls use to control audio.<br>
+          <code>&lt;source src="url" type="audio/mpeg" /></code> <strong>SC.</strong> The source tag has a src attribute
+          which is the source of the audio. type is the file type of the audio file.<br>
+          <code>&lt;/audio></code>
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Figure">
+      <header>HTML Figure</header>
+      <article>
+        <p>
+          <code>&lt;figure></code> Figure tag. <br>
+          <code>&lt;img src="url"></code> <strong>SC.</strong> Img tag. The attribute src is the url of the image.<br>
+          <code>&lt;br></code> <strong>SC.</strong> br tag starts a new line so cation is underneath the image. <br>
+          <code>&lt;figcaption>Caption&lt;/figcaption></code> Caption of the figure.<br>
+          <code>&lt;/figure></code> Figure closing tag.<br>
+
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Basics">
+      <header>CSS Basics</header>
+      <article>
+        <p>
+          To style you must first select what you want to style. This is done by the name of what you want to style
+          followed by {}. Inside the curly brackets{} is the code that styles the css tag. For example, if you wanted to
+          change the background color of the webpage you would use the following:<br>
+          <code>body {background-color:red;}</code><br><br>
+          to reference a structural tag just use the name of the tag. To reference an id use <code>#id</code>. To
+          reference a tag use <code>.class</code>.
+        </p>
+        <p>
+          CSS goes in between the style tag (<code>&lt;style></code>) inside the html file. The html file is normally
+          named index.html. If you want to keep the css in a different file, you can just add a link to the css file
+          using<br>
+          <code>&lt;link href="url" rel="stylesheet" type="text/css"> </code>
+        </p>
+        <p>
+          You can have variables in CSS. They are made using the following:<br>
+          <code>var(--variablename)</code><br>
+          To use the variable use:
+          <code>--variablename</code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Text">
+      <header>CSS Text</header>
+      <article>
+        <p>
+          <code>font-size:16px;</code> Change Font size.<br>
+          <code>color:red;</code> Change font color.<br>
+          <code>font-family:</code> Change font.<br>
+          <code>text-align:justify;</code> Evenly spaces text. <br>
+          <code>font-weight: bold;</code> Bold text. <br>
+          <code>text-decoration:underline;</code> Underline text.<br>
+          <code>font-style: italic;</code> Italic.<br>
+          <code>text-decoration:line-through;</code> Draws line through text. <br>
+          <code>line-height:25px;</code> Changes distance between lines. <br>
+          <code>text-transform:lowercase; </code> Transforms text all to lowercase.<br><br>
+          There are also html tags that can be used in between tags.<br>
+          <code>&lt;hr> </code> <strong>SC.</strong> Adds line underneath the container.<br>
+          <code>&lt;strong> </code> Makes text bold<br>
+          <code>&lt;br> </code> new line<br>
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Color_and_Size">
+      <header>CSS Color and Size</header>
+      <article>
+        <p>
+          There are many ways to represent color in css.<br>
+          <code>
+            Colorname</code> eg. <code>green;</code><br><code>
+            #hexcode(6)<br>
+            #hexshort(3)<br>
+            rgb(255,255,255)<br>
+            rgba(255,255,255,1)<br>
+            hsl(360,100%,100%)<br>
+            transparent<br>
+          </code>
+        </p>
+        <p>
+          There are many ways to represent size in CSS.<br>
+          <code>
+            px<br>
+            in<br>
+            mm<br>
+            rem<br>
+            em<br> 
+          </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Hierarchy">
+      <header>CSS Hierarchy</header>
+      <article>
+        <p>
+          When formatting your CSS you will probably start overlapping functions. When this happens CSS will apply the
+          function with the greatest importance. The order below is from most important to least.
+        <ol>
+          <li>Important attribute: <code>color:red !important;</code></li>
+          <li>Inline HTML attribute: <code>style="color:orange;"</code></li>
+          <li>ID: <code>#id {color:yellow;}</code></li>
+          <li>Classes: <code>.class{color:green;}</code></li>
+          <li>Elements: <code>h1{color:blue;}</code></li>
+        </ol>
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Images">
+      <header>CSS Images</header>
+      <article>
+        <p>
+          <code>width:100px;</code> Image width.<br>
+          <code>border-width: 10px;</code> Border width.<br>
+          <code>border-color:green;</code> Border color.<br>
+          <code>border-style:solid;</code> Fills border.<br>
+          <code>border-radius:10px;</code> Size of corners. can use 50% to make a circle.<br>
+          <code>max-width: 100%;</code> The maximum size the image can adjust to.<br>
+          <code>height: auto;</code> Resizes to fill container. <br>
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Container">
+      <header>CSS Container</header>
+      <article>
+        <p>
+          <code>background-color:green;</code> Changes background color.<br>
+          <code>background:linear-gradient(angledeg,color1,color2);</code> adds gradient background.<br><br>
+          <code>background: repeating-linear-gradient(</code><br>
+          <code>90deg,</code><br>
+          <code>yellow 0px,</code><br>
+          <code>blue 40px,</code><br>
+          <code>green 40px,</code><br>
+          <code>red 80px</code><br>
+          <code>);</code> Can have multiple color changes in gradient.<br><br>
+          <code>background:url();</code> To set an image as the background just put the url inside the brackets.<br>
+          <code>opacity:0%;</code> how see through you want the container to be.<br>
+          <code>padding: 20px;</code> Similar to border of an image.<br>
+          <code>margin: 20px;</code> The area your text will fill.<br>
+          <code>border: top right bottom left;</code> replace the word "border" with "margin" or "padding" and can
+          quickly apply top, right, bottom and left "border".<br>
+          <code>margin:auto;</code> Auto fits margin to area.<br>
+          <code>width:245px;</code> Width of container.<br>
+          <code>height:25px;</code> Height of container.<br>
+          <code>position:relative;</code> relative to the tag the container is in. Also accepts absolute and fixed.<br>
+          <code>float:left; </code> Hover above.<br>
+          <code>top:15px; </code> distance from top.<br>
+          <code>z-index:2;</code> Priority when ordering.<br>
+          <code>box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);</code> Shadow.<br>
+          <code>transform:scale(1.5);</code> makes bigger by value. also accepts skewX(0deg) skeyY(0deg)<br>
+          <code>opacity: 0.1;</code> How see through the container is.<br>
+
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_media_query">
+      <header>CSS Media query</header>
+      <article>
+        <p>
+          Media query's are applied when the size of the display matched the statement. In this example the media query
+          changes the size of the variable inside the global tag,root if the screen size is smaller then 350px.<br>
+          <code>
+          @media (max-width: 350px) {<br>
+            :root {<br>
+          --varible:200px;}<br>
+          }<br>
+          </code>
+
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Pseudo-classes">
+      <header>CSS Pseudo-classes</header>
+      <article>
+        <p>
+          Pseudo-classes only apply if certain events are triggers. some examples are:<br>
+          <code>
+            a:hover{}<br>
+            a::before {<br>
+                content: "";<br>
+            a::after {<br>
+                content: ""}<br>         
+          </code> These pseudo-classes are being applied to an anchor. The hover pseudo-class applies if the mouse if
+          hovering over the anchor. The <code>::before</code> tag applies it before the anchor. And vice versa for the
+          <code>::after</code>.
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Animation">
+      <header>CSS Animation</header>
+      <article>
+        <p>
+          <code>#id</code><br>
+          <code>animation-name:name;</code> Name of animation to apply.<br>
+          <code>animation-duration:0s;</code> Animation duration.<br>
+          <code>animation-fill-mode:forwards;</code> How the animation should run.<br>
+          <code>animation-iteration-count: infinite;</code> How many times the animation should loop. Also accept numerical value.<br>
+          <code>animation-timing-function:ease-out;</code> How the animation should run. Also accepts:<code> ease-out, linear, cubic-bezier(x1,y1,x2,y2)</code><br>
+          <code>}</code><br><br>
+          This is how the Animation itself should be written. The percentages say how the object should look at a specific part of the animation. 50% represents half way. You can pick any point you like.<br>  
+          <code>@keyframes name{</code><br>
+          <code>0% {</code>
+          <code>}</code><br>
+          <code>50%{</code>
+          <code>}</code><br>
+          <code>100% {</code>
+          <code>}</code><br>
+          <code>}</code><br>
+        </p>
+
+      </article>
+    </section>
+
+    <section class="main-section" id="Accessibility">
+      <header>Accessibility</header>
+      <article>
+        <p>
+          Here are some key points to remember when coding for accessibility.
+          <ul>
+            <li>Have well organized code that uses appropriate markup.</li>
+            <li>Ensure all non text content such as images and audio have an alt attribute that clearly describes the content. Make sure you done use special characters.</li>
+            <li>Create an easily navigated page that has keyboard friendly navigation.</li>
+            <li>Images that are decorative should have an empty alt.</li>
+            <li>When picking colors, make sure there is high enough contrast for the visually impaired.</li>
+            <li>The heading tags, h1, h2... should be used correctly with h2 headings being subsection of h1's.</li>
+            <li>Include meta information inside head.</li>
+          </ul>
+        </p>
+
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
